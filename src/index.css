@@ -8,3 +8,10 @@
 body{
   font-family: "Poppins", sans-serif;
 }
+
+/* hover:text-[#403F3F] hover:bg-[#E7E7E7] */
+
+a.active{
+  color: #403F3F;
+  background-color: #E7e7e7;
+}

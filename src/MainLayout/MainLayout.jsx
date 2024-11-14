@@ -3,6 +3,8 @@ import Header from "../Components/Header";
 import Latest from "../Components/Latest";
 import Navbar from "../Components/Navbar";
 import Categories from "../MainSections/Categories";
+import RightSide from "../MainSections/RightSide";
+import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
@@ -29,11 +31,12 @@ const MainLayout = () => {
         </aside>
 
         <section className="col-span-6">
-            <h1>Dragon News Home</h1>
+            <h1 className='text-lg font-semibold text-[#403F3F] leading-8 mb-6'>Dragon News Home</h1>
+            <Outlet></Outlet>
         </section>
 
         <aside className="col-span-3">
-            <h1>Login With</h1>
+            <RightSide></RightSide>
         </aside>
       </main>
     </div>

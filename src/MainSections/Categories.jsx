@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Categories = () => {
 
@@ -19,11 +20,11 @@ const Categories = () => {
 
     return (
         <div>
-            <h1 className='text-lg font-semibold text-[#403F3F] leading-8'>All Caterogy ({categories.length})</h1>
+            <h1 className='text-lg font-semibold text-[#403F3F] leading-8 mb-6'>All Caterogy</h1>
 
             <div className='flex items-start flex-col'>
                 {
-                    categories.map(category => <button className='transition-colors text-left text-lg font-medium text-[#9F9F9F] leading-8 pl-12 w-full py-4 rounded-md hover:text-[#403F3F] hover:bg-[#E7E7E7]'>{category.category_name}</button>)
+                    categories.map(category => <NavLink to={`/category/${category.category_id}`} className='transition-colors text-left text-lg font-medium text-[#9F9F9F] leading-8 pl-12 w-full py-4 rounded-md'>{category.category_name}</NavLink>)
                 }
             </div>
 
