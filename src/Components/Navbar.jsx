@@ -1,6 +1,6 @@
 import React from 'react';
 import loginIcon from '../assets/user.png'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -14,7 +14,7 @@ const Navbar = () => {
             </div>
             <div className='flex items-center gap-3'>
                 <img src={loginIcon} alt="user icon" />
-                <button className='bg-[#403F3F] py-2 px-8 text-lg font-semibold text-white'>Login</button>
+                <Link to="/auth/login" className='bg-[#403F3F] py-2 px-8 text-lg font-semibold text-white'>Login</Link>
             </div>
         </div>
     );
