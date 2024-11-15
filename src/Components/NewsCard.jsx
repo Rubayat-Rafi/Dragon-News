@@ -1,11 +1,13 @@
 import React from "react";
 import { FiShare2 } from 'react-icons/fi';
 import { AiOutlineStar, AiOutlineEye } from 'react-icons/ai';
+import { Link } from "react-router-dom";
 
 const NewsCard = ({ singleNews }) => {
 //   console.log(singleNews);
 
   const {
+    _id,
     title,
     author,
     rating,
@@ -47,7 +49,7 @@ const NewsCard = ({ singleNews }) => {
 
     {/* Details */}
     <p className="text-sm text-gray-700 mb-3">
-        {details.substring(0, 100)}... <span className="text-blue-500">Read More</span>
+        {details.substring(0, 100)}... <Link to={`/news/${_id}`} className="text-blue-500">Read More</Link>
     </p>
 
     {/* Rating and Views */}

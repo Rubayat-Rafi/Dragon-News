@@ -1,7 +1,6 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import NewsCard from "../Components/NewsCard";
-// import { RiH1 } from "react-icons/ri";
 
 const CategoryNews = () => {
   const { data: news } = useLoaderData();

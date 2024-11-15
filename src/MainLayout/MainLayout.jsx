@@ -7,6 +7,7 @@ import RightSide from "../MainSections/RightSide";
 import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
+
   return (
     <div>
       {/* header section start here  */}
@@ -41,6 +42,7 @@ const MainLayout = () => {
       </main>
     </div>
   );
+  
 };
 
 export default MainLayout;
